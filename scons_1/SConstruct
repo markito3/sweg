@@ -1,0 +1,3 @@
+Object('funcs.o', 'funcs/funcs.c')
+Library('funcs')
+Program('project', 'main/main.c', CPPPATH = './include', LIBS=['funcs'], LIBPATH='.')
