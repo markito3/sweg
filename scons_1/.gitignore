@@ -1,0 +1,5 @@
+.sconsign.dblite
+funcs.o
+libfuncs.a
+main/main.o
+project
