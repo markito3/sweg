@@ -1,0 +1,8 @@
+#!/bin/bash
+source /group/halld/Software/build_scripts/gluex_env_jlab.sh
+cp /group/halld/www/halldweb/html/dist/ccdb.sqlite .
+export CCDB_CONNECTION=sqlite:///`pwd`/ccdb.sqlite
+ccdb cat test/test_vars/test_table
+rm -f file.txt
+ccdb dump test/test_vars/test_table > file.txt
+ccdb add test/test_vars/test_table -r 3000-4000 file.txt
