@@ -3,7 +3,8 @@
 class eg {
   int x, y, z;
  public:
-  eg():x(2) {}
+  //  eg():x(2) {}
+  eg():x(2),y(3),z(4) {}
   int f(int i, int j) {
     printf("x,y,z = %d %d %d\n", x, y, z);
     return i*j*x*y*z;
