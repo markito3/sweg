@@ -1,4 +1,0 @@
-int main() {
-  DataProvider *provider = new MySQLDataProvider();
-  exit 0;
-}
