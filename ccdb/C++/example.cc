@@ -7,6 +7,7 @@ int main() {
   
   bool connection_status = false, get_status = false;
   vector<vector<string>> table;
+  vector<map<string, string>> table_map;
       
   DataProvider *provider = new MySQLDataProvider();
   string connection_string = "mysql://ccdb_user@hallddb.jlab.org/ccdb";
@@ -28,5 +29,8 @@ int main() {
       cout << i << " " << j << " " << table[i][j] << endl;
     }
   }
+
+  get_status = calib->GetCalib(table_map, "/test/test_vars/test_table");
+  
   exit(0);
 }
