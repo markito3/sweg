@@ -5,3 +5,6 @@ example.o: example.cc
 
 example: example.o
 	g++ -g -o example example.o -L${CCDB_HOME}/lib -lccdb
+
+clean:
+	${RM} *.o example
