@@ -4,15 +4,15 @@ import mysql.connector
 
 #if this page is executed with no errors, you have the "mysql.connector" module installed.
 
-mydb = mysql.connector.connect(
+mycon = mysql.connector.connect(
   host="localhost",
   user="marki",
   passwd="hybrid"
 )
 
-print(mydb)
+print(mycon)
 
-mycursor = mydb.cursor()
+mycursor = mycon.cursor()
 
 mycursor.execute("CREATE DATABASE mydatabase")
 

@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 import mysql.connector
 
-mydb = mysql.connector.connect(
+mycon = mysql.connector.connect(
   host="localhost",
   user="marki",
   passwd="hybrid",
   database="mydatabase"
 )
 
-mycursor = mydb.cursor()
+mycursor = mycon.cursor()
 
 sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
 val = ("John", "Highway 21")
 mycursor.execute(sql, val)
 
-mydb.commit()
+mycon.commit()
 
 print(mycursor.rowcount, "record inserted.")
