@@ -1,0 +1,10 @@
+/particle/select eta
+/particle/property/decay/select 0
+/particle/property/decay/br 0
+/particle/property/decay/select 1
+/particle/property/decay/br 1
+/particle/property/decay/select 2
+/particle/property/decay/br 0
+/particle/property/decay/select 3
+/particle/property/decay/br 0
+/run/beamOn 1000
