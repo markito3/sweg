@@ -1,10 +1,13 @@
-all: program_static program_shared
+all: program_static program_shared program_rpath
 
 program_static: main.o libmy_class_static.a
 	g++ -o program_static main.o -L. -lmy_class_static
 
 program_shared: main.o libmy_class_shared.so
 	g++ -o program_shared main.o -L. -lmy_class_shared
+
+program_rpath: main.o libmy_class_shared.so
+	g++ -o program_rpath main.o -L. -Wl,-rpath=`pwd` -lmy_class_shared
 
 main.o: main.cc
 	g++ -c main.cc

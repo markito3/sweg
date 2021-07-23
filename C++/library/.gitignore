@@ -1,3 +1,4 @@
 program_shared
 program_static
+program_rpath
 
