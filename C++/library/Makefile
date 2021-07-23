@@ -20,3 +20,6 @@ libmy_class_shared.so: my_class_get.o my_class_set.o
 
 %.o: src/%.cc
 	g++ -c $<
+
+clean:
+	rm -fv *.o *.a *.so program_*
