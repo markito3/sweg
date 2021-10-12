@@ -24,6 +24,6 @@ foreach(SRC ${SRCS}) # for each input file, create a custom command
   endif()
 endforeach(SRC)
 add_custom_target(target_all # the name of the target is a .PHONY make target
-  ALL # make target_a the default target
+  ALL # make target the default target
   DEPENDS ${OUTFILES} # have the target depend on all of the output files.
   )
