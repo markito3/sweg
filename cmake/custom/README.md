@@ -1,3 +1,5 @@
+Work toward this behavior:
+
 Start with three files:
 
  a.txt
@@ -14,3 +16,6 @@ by doing, for example,
 
  cp -v a.txt a.txt.made
 
+v1 does it for one file, without generating dependecies
+v2 does it for one file, with dependencies
+v3 does it for multiple files, with dependencies
