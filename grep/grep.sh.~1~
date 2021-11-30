@@ -1,0 +1,6 @@
+#!/bin/bash
+grep 12.34 file.txt
+grep '12.34' file.txt
+grep '12\.34' file.txt
+grep '12 34' file.txt
+grep '12.\.34' file.txt
