@@ -1,3 +1,5 @@
+*~
 *.tmp
 *.root
+*.o
 create_hist
