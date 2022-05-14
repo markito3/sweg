@@ -1,0 +1,4 @@
+TRACKNUMBER=1
+ARTIST=Jonathan Richman
+TITLE=The Sweeping wind (Kwa Ti Feng)
+ALBUM=R N R With the M L
